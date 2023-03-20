@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Assigment 1 Report - Lee Xuan Hua</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Assignment 1 Report - Lee Xuan Hua</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -15278,27 +15278,7 @@ From the PDF, we can see that the distribution of SRT is ideal, where most are c
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>468.0</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
 
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -16083,6 +16063,31 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><b>Alternative Interpretation:</b></p>
+<ul>
+<li><p><strong>Line chart</strong>: A line chart displays data points connected by lines, making it useful for plotting continuous variables over time, such as search response time (SRT) or the number of page views. It can help identify trends and patterns in the data over time, which can be useful for identifying performance issues or measuring the impact of changes made to the search engine.</p>
+</li>
+<li><p><strong>Stacked area chart</strong>: A stacked area chart displays the cumulative total of multiple series on top of each other, making it useful for visualizing the contribution of multiple factors to a single variable, such as the four components of SRT. It can help identify which factors are contributing the most to the overall performance of the search engine, which can be useful for prioritizing improvements.</p>
+</li>
+<li><p><strong>100% stacked area chart</strong>: Similar to a stacked area chart, a 100% stacked area chart shows the composition of different categories over time, but it represents the data as a percentage of the whole. This chart is best used when you want to compare the relative proportion of each category over time.</p>
+</li>
+<li><p><strong>CDF chart</strong>: A CDF (cumulative distribution function) chart is useful for visualizing the distribution of a continuous variable, such as SRT per number of images. It is useful in identifying the proportion of searches that fall below a certain threshold, which can be useful for setting performance targets and identifying outliers.</p>
+</li>
+<li><p><strong>Histogram chart</strong>: A histogram chart is a bar chart that displays the distribution of a variable by grouping the data into intervals or bins. It is useful for visualizing the distribution of discrete variables, such as page views by province. For example, a histogram chart can help identify which provinces are generating the most traffic to the search engine, which can be useful for targeting marketing efforts or identifying opportunities for expansion.</p>
+</li>
+<li><p><strong>Pie chart</strong>: A pie chart is a circular chart that shows the proportion of each category in a data set. It is useful for visualizing the relative contribution of discrete variables, such as page views by user agent. For example, a pie chart can help identify which user agents are generating the most traffic to the search engine, which can be useful for optimizing the search engine for different devices or browsers.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Describe-your-experience-or-findings-in-doing-those-jobs.-For-example,-experience-of-processing-the-data,-observations-from-the-charts,-characteristics-of-the-data,-potential-explanations,-and-any-interesting-things-you-would-like-to-mention.">Describe your experience or findings in doing those jobs. For example, experience of processing the data, observations from the charts, characteristics of the data, potential explanations, and any interesting things you would like to mention.<a class="anchor-link" href="#Describe-your-experience-or-findings-in-doing-those-jobs.-For-example,-experience-of-processing-the-data,-observations-from-the-charts,-characteristics-of-the-data,-potential-explanations,-and-any-interesting-things-you-would-like-to-mention.">&#182;</a></h4>
 </div>
 </div>
@@ -16112,6 +16117,30 @@ class="
 <p>It was interesting to observe that most of the User Agents were that of a Chrome browser. According to news, Google services such as the Chrome browser have not been available to mainland China users since 2014. This is in contrast with the analysis derived from the logs.</p>
 <p>On a side note, chart 2 seems to suggest that the SRT components could be correlated. This could be due to the fact that a high network latency suggests that there are many incoming requests, which would also stress the CPU of the servers and cause other side effects. Therefore, both Tnet and Tserver would fluctuate together.</p>
 <p>Lastly, some of the requests were not from the 32 provinces in China, as they were labelled "None". This could be due to the use of VPNs or requests originating from outside of China. Therefore, their IP could not be mapped back to any of those in the Chinese provinces.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><b>Alternative Interpretation:</b></p>
+<ul>
+<li><strong>Line chart of average SRT over time:</strong> From the line chart, it is evident that the average SRT (search response time) over time is cyclical, where each new day follows a similar pattern. The average SRT is lowest during the early morning and gradually increases throughout the day, with a rapid increase to its highest point during the evening. The increase in SRT over the day could be because of increased user traffic or load on the search engine’s servers as an increased number of people use the search engine during the day as they embark on their various tasks. The spike in SRT during the evening could also be because people tend to use search engines more after work hours during their leisure time in the evening, leading to a higher load on the search engine's servers.</li>
+<li><strong>Stacked area charts of composition of average SRT over time:</strong> In terms of composition of average SRT, it is evident that Tbrowser (the DOM parsing time of the browser) is the smallest % component of SRT, followed by Tserver (the server-side processing time of the query), Tnet the page transmission time over the network) and finally Tother (the remaining time for acquire other embedded elements in the page, such as images).<ul>
+<li><strong>Tbrowser</strong> represents the time spent by the user's browser to parse the document object model (DOM) of the search results page, which occurs first in the search process. This component may be the smallest because modern browsers are optimized for rendering web pages quickly, and parsing the DOM is a fast process.</li>
+<li><strong>Tserver</strong> represents the time spent by the server to process the query and retrieve relevant search results, which occurs after the user enters the search query. This component is typically longer than Tbrowser because it involves more complex processes such as ranking search results and filtering irrelevant results.</li>
+<li><strong>Tnet</strong> represents the time spent transmitting the search results page over the network from the server to the user's browser, which occurs after the server has processed the query and retrieved the results. This component is typically longer than Tserver because network transmission times can be affected by factors like network congestion and bandwidth limitations.</li>
+<li><strong>Tother</strong> represents the remaining time spent acquiring other embedded elements on the search results page, such as images or ads. Possible reasons why it may be the largest component of SRT may be due to the large number of embedded elements. Since the spike in SRT (and also Tother) is at night, it might be due to the fact that people at night tend to watch videos / scroll social media feeds that contains a lot of embedded elements.</li>
+</ul>
+</li>
+<li><strong>CDF (Cumulative distribution function) chart of SRT:</strong> From the chart, SRT increases at an increasing rate till about 1200 ms, then increases at a decreasing rate. The initial increasing rate of the CDF curve indicates that the majority of the queries have a low response time and are completed relatively quickly. Once the response time crosses a certain threshold (in this case, around 1200 ms), the decreasing rate of increase in the CDF curve may be due to the system reaching its processing capacity or the limitations of the network or hardware. Analyzing the CDF chart in this way can help identify performance bottlenecks and prioritize areas for improvement e.g. to optimise the system for the smaller fraction of queries which are taking longer to improve overall performance and user experience.</li>
+<li><strong>Histogram chart of PVs per province:</strong> From the chart, Guangdong has the highest number of PVs (page views / queries),  and Xizang the lowest number of PVs. This might be because Guangdong has a very large population and more economically developed, which lead to a higher number of internet users, and therefore, a higher number of PVs. On the other hand, Xizang has a much smaller population and is a relatively underdeveloped province, leading to fewer internet users and a lower number of PVs.</li>
+<li><strong>Pie chart of PVs per UA (user agent):</strong> From the chart, Chrome has the largest PV at 56.96% due to its fast performance and cross-platform availability, making it a popular choice among users.</li>
+</ul>
 
 </div>
 </div>
